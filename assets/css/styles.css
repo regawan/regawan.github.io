@@ -1,13 +1,13 @@
 body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     background: #000000;
     color: #F5F5F5;
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
 }
 
 header {
@@ -16,23 +16,18 @@ header {
 }
 
 main {
+    padding-bottom: 3rem;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 3rem;
 }
 
-h1 {
-    font-family: 'Inter', sans-serif;
-}
-
-h2 {
+h1, h2, h3 {
     font-family: 'Inter', sans-serif;
 }
 
 h3 {
-    font-family: 'Inter', sans-serif;
     margin-top: 4rem;
 }
 
@@ -43,15 +38,15 @@ p {
 section {
     width: 30%;
     margin: 0.2rem 0;
+    padding-bottom: 1rem;
     text-align: justify;
     border-bottom: 1px solid #F5F5F5;
-    padding-bottom: 1rem;
 }
 
 .project {
     margin: 1rem 0; /* Define margin between divs */
-    border-left: 1px solid #F5F5F5;
     padding-left: 2rem;
+    border-left: 1px solid #F5F5F5;
 }
 
 .project:last-child {
@@ -60,22 +55,23 @@ section {
 
 img {
     display: block;
-    max-width: 100%;
     width: 100%;
+    max-width: 100%;
     height: auto;
-    box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
     margin: 1rem 0;
     border-radius: 1rem;
+    box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
 }
 
 footer {
-    font-family: 'Inter', sans-serif;
-    background: #000000;
-    text-align: center;
     padding: 0.2rem 0;
     width: 100%;
     position: fixed;
     bottom: 0;
+    background: #000000;
+    color: #F5F5F5;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
 }
 
 nav a {
@@ -89,10 +85,6 @@ a {
 
 a:hover {
     color: #838383;
-}
-
-a:active {
-    color: #FFD700;
 }
 
 /* Mobile Responsiveness */
